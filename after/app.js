@@ -14,7 +14,7 @@ $(function(){
   // ページカウントの初期値
   let pageCount = 1;
   // 検索ワードに変化が無かった場合の変数
-  let continueSearch = '""';
+  let continueSearch = '';
   // 検索ボタンをクリックした時
   $('.search-btn').on('click', function(){
     // searchWordに検索ワードに入力した値を代入
@@ -94,12 +94,12 @@ $(function(){
     // ページカウントを1に
     pageCount = 1;
     // continueSearchにsearchWordが代入されるようになっている事もあるため、元の値「""」を代入し元に戻す
-    continueSearch = '""';
+    continueSearch = '';
     // .listsの子要素を削除
     $('.lists').empty();
     // .messageクラスを削除
     $('.message').remove();
     // 検索ワードを空にする
-    $('#search-input').val('""');
+    $('#search-input').val('');
   });
 });
